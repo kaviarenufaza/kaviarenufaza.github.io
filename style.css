@@ -145,6 +145,10 @@ main > aside {
     flex-direction: column;
 }
 
+main > aside > section {
+    padding: 7rem;
+}
+
 @media only screen and (max-width: 800px){
     main {
         grid-template-columns: 1fr;
@@ -155,13 +159,10 @@ main > aside {
     main > aside {
         grid-column: 1 / 2;
     }
+    main > aside > section {
+        padding: 7rem 2rem;
+    }
 }
-
-
-main > aside > section {
-    padding: 7rem;
-}
-
 
 main > aside > section.colored {
     background-color: var(--color-primary);
@@ -321,13 +322,19 @@ footer h1, footer h2, footer h3 {
 }
 
 @media only screen and (max-width: 800px){
-    .contact {
-        padding: 7rem 0;
+
+    footer {
+        padding: 7rem 3rem;
+    }
     
+    .contact {    
+        padding: 0;
+
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
 
         gap: 7rem;
+        margin-bottom: 7rem;
     }
     
     .contact > div.info {
@@ -339,6 +346,8 @@ footer h1, footer h2, footer h3 {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
     }
+
+
 }
 
   
