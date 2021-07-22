@@ -57,7 +57,7 @@ header {
     grid-template-rows: 100%;
     color: var(--color-primary);
     font-weight: 200;
-    height: 28rem;
+    height: 45rem;
 }
 
 header > * {
@@ -68,14 +68,16 @@ header > * {
 }
 
 header > figure {
+    font-size: 150%;
+    font-weight: 200;
     grid-column: 1 / 2;
-    background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url("images/1.jpeg");
-    background-attachment: fixed;
+    background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url("images/5.jpeg");
+    background-size: cover;
     padding-left: 13rem;
 }
 
 header > figure > .container > h1 {
-    color: var(--color-positive);
+    color: var(--color-primary);
 }
 
 header > address {
@@ -110,6 +112,7 @@ address > p {
 
     address > p {
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
     address > p > span:not(:last-child) {
